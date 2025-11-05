@@ -1,0 +1,55 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.drop-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.starr-drop {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #ffcc00, #ff9900);
+  border-radius: 50%;
+  box-shadow: 0 0 20px #ffcc00;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 20px #ffcc00; }
+  50% { transform: scale(1.1); box-shadow: 0 0 40px #ffcc00; }
+  100% { transform: scale(1); box-shadow: 0 0 20px #ffcc00; }
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffdd33;
+}
+
+#result {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
